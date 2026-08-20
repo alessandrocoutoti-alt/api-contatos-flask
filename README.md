@@ -4,10 +4,18 @@ Uma API RESTful para gerenciamento de contatos, desenvolvida em **Python** utili
 
 ---
 
+## 🔗 Projeto Relacionado
+
+Esse backend serve dados para o front-end React:
+👉 [frontend-contatos](https://github.com/alessandrocoutoti-alt/frontend-contatos)
+
+---
+
 ## 🚀 Tecnologias Utilizadas
 
 *   **Linguagem:** [Python 3.x](https://www.python.org/)
 *   **Framework Web:** [Flask](https://flask.palletsprojects.com/)
+*   **CORS:** [Flask-CORS](https://flask-cors.readthedocs.io/) (para integração com o front-end)
 *   **Banco de Dados:** [SQLite](https://www.sqlite.org/) (em arquivo local: `contatos.db`)
 
 ---
@@ -37,9 +45,9 @@ No terminal, crie e ative um ambiente virtual Python:
     ```
 
 ### 3. Instalar as dependências
-Como o SQLite é nativo do Python, precisamos instalar apenas o Flask:
+Como o SQLite é nativo do Python, precisamos instalar o Flask e o Flask-CORS:
 ```bash
-pip install Flask
+pip install Flask flask-cors
 ```
 
 ### 4. Executar a aplicação
